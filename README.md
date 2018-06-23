@@ -12,9 +12,13 @@ With the help of [this](https://github.com/LevPasha/Instagram-API-python) Instag
 ### Screenshots:
 <p align="center">
   <img src = "https://i.imgur.com/xuSs1fw.png" height="700px"/>
-  <img src = "https://i.imgur.com/xPlIyrS.png" height="700px">
+</p>
+<p align="center">
+  <img src = "https://i.imgur.com/xPlIyrS.png" height="700px"/>
 </p>
 <p align="center">
   <img src = "https://i.imgur.com/mQP5ZfK.png" height="700px"/>
+</p>
+<p align="center">
   <img src = "https://i.imgur.com/i7TxXKD.png" height="700px"/>
 </p>
