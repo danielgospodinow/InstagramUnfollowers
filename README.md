@@ -1,5 +1,5 @@
 # InstagramUnfollowers
-### A script that finds all the bad people who don't follow you back
+### A web application that finds all the bad people who don't follow you back
 
 With the help of [this](https://github.com/LevPasha/Instagram-API-python) Instagram API, I managed to build a web application which can filter out all the bad people who don't follow you back.
 
