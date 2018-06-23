@@ -2,9 +2,6 @@ import sys
 from utils.trie import *
 from InstagramAPI import InstagramAPI
 
-def getUserCreditials():
-    return "ninjapopfolkterminator", "danchosexa"
-
     
 def extractNames(people):
     names = []
