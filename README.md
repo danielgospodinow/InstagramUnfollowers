@@ -11,7 +11,8 @@ With the help of [this](https://github.com/LevPasha/Instagram-API-python) Instag
 ##
 ### Screenshots:
 <p align="center">
-  <img src = "https://i.imgur.com/xuSs1fw.png" height="300px"/>
+  <img src = "https://i.imgur.com/xuSs1fw.png" height="600px"/>
+  <img src = "https://i.imgur.com/xPlIyrS.png" height="600px">
 </p>
 <p align="center">
   <img src = "https://i.imgur.com/xPlIyrS.png"/>
