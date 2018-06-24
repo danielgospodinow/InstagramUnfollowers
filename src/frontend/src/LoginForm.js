@@ -25,7 +25,16 @@ class LoginForm extends React.Component
 
     //0.0.0.0:5000
     //instaunfollowers.ddns.net:5000
-    fetch('http://0.0.0.0:5000/?username=' + this.state.username + '&password=' + this.state.password)
+    fetch('http://0.0.0.0:5000/?username=' + this.state.username + '&password=' + this.state.password, {
+      //method: 'POST',
+      //mode: 'cors',
+      /*
+        body: JSON.stringify({
+        username: "kur",
+        password: "putaranka",
+      })
+      */
+    })
     .then(response => response.json())
     .then(response => {
       this.setState({ error: false, loading: false })

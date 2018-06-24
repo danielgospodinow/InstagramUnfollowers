@@ -5,6 +5,9 @@ import (
 	"net/http"
 	"os/exec"
 	"strings"
+	"time"
+
+	"github.com/rs/cors"
 )
 
 func getUnfollowers(username, password string) string {
@@ -20,17 +23,18 @@ func getUnfollowers(username, password string) string {
 	return outputs[len(outputs)-1]
 }
 
-func handleGetFollowers(w http.ResponseWriter, r *http.Request) {
-	params := r.URL.Query()
-	w.Write([]byte(getUnfollowers(params["username"][0], params["password"][0])))
-
-	fmt.Println("Request completed!")
-}
-
 func main() {
-	http.HandleFunc("/", handleGetFollowers)
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", func(response http.ResponseWriter, request *http.Request) {
+		response.Header().Set("Content-Type", "application/json")
+		request.ParseForm()
+		response.Write([]byte(getUnfollowers(request.Form.Get("username"), request.Form.Get("password"))))
 
-	if err := http.ListenAndServe(":5000", nil); err != nil {
-		panic(err)
-	}
+		fmt.Println("Request completed! Time: " + time.Now().String() + "\n")
+	})
+
+	port := ":5000"
+	handler := cors.Default().Handler(mux)
+	fmt.Printf("Server listening at port %s\n", port)
+	http.ListenAndServe(port, handler)
 }

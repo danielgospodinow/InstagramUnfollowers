@@ -11,7 +11,7 @@ CORS(app)
 @app.route('/')
 def index():
     unfollowers = getUnfollowers(getInstaAPI(request.args["username"], request.args["password"]))
-    return jsonify( unfollowers )
+    return jsonify(unfollowers)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)

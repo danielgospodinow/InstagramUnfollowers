@@ -10,14 +10,17 @@
     "react-native-elements": "^0.19.1",
     "react-router": "^4.2.0",
     "react-scripts": "1.1.4",
-    "semantic-ui": "^2.3.1",
     "semantic-ui-css": "^2.3.1",
-    "semantic-ui-react": "^0.80.0"
+    "semantic-ui-react": "^0.80.0",
+    "webpack-cli": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.4"
   }
 }
